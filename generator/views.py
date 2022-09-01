@@ -23,3 +23,7 @@ def password(req):
         generatedPassword += characters[index]
 
     return render(req, 'generator/password.html', {'password': generatedPassword})
+
+
+def about(req):
+    return render(req, 'generator/about.html')
